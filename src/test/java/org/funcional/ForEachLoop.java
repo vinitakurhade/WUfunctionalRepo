@@ -23,8 +23,7 @@ public class ForEachLoop {
 	for (WebElement link : links) {
 		System.out.println(link.getText());
 	}
-	long workingLinks = links.stream().filter(link -> link.getAttribute("href")!=null).count();
-	System.out.println("Working link : - "+workingLinks);
+	
 	driver.close();
 	
 }
